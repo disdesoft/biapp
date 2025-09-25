@@ -218,7 +218,7 @@ def winsorize_series(y: pd.Series, q=95):
 
 # --------------------------- SIDEBAR ---------------------------
 try:
-    st.sidebar.image("logo.png", use_column_width=True)
+    st.sidebar.image("logo.png", use_container_width=True)
 except Exception:
     st.sidebar.markdown("**Universidad INCCA de Colombia**")
 st.sidebar.markdown("### BI – MVP BUSINESS ANALYTICS")
@@ -648,3 +648,4 @@ try:
             st.download_button("Descargar reporte.pdf", f, file_name="reporte.pdf", mime="application/pdf")
 except Exception:
     st.caption("Para exportar a PDF instala weasyprint:  pip install weasyprint")
+
